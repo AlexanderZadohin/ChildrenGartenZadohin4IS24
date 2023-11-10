@@ -1,0 +1,53 @@
+﻿<Page x:Class="ChildrenGartenZadohin4IS24.PageMain.PageAddGroup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChildrenGartenZadohin4IS24.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="800"
+      Title="PageAddGroup">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.ColumnSpan>
+                    3
+                </Grid.ColumnSpan>
+                <TextBlock FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Введите группу:
+                </TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Grid.ColumnSpan="3">
+                <TextBox Name="GroupNameTB" Margin="190,0,190,10"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.ColumnSpan="3">
+                <TextBlock FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Выберите тип группы:
+                </TextBlock>
+            </Grid>
+            <Grid Grid.Row="3" Grid.ColumnSpan="3">
+                <ComboBox Name="TypeGroupCMB" Margin="190,0,190,10"/>
+            </Grid>
+            <Grid Grid.Row="4" >
+                <Button Name="BackBtn" HorizontalAlignment="Right" Width="200" Content="Назад" Click="BackBtn_Click"/>
+            </Grid>
+            <Grid Grid.Row="4"  Grid.Column="3">
+                <Button Width="200" HorizontalAlignment="Left" Content="Добавить" Height="60" Name="AddGroupBtn" VerticalAlignment="Bottom" Click="AddGroupBtn_Click"/>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Page>
